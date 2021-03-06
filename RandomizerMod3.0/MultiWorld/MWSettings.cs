@@ -1,4 +1,4 @@
-﻿using SeanprCore;
+﻿using SereCore;
 
 namespace RandomizerMod.MultiWorld
 {
@@ -8,6 +8,12 @@ namespace RandomizerMod.MultiWorld
         {
             get => GetString("127.0.0.1");
             set => SetString(value);
+        }
+
+        public int LastReadyID
+        {
+            get => GetInt(-1);
+            set => SetInt(value);
         }
 
         public int Port
