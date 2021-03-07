@@ -27,13 +27,12 @@ namespace RandomizerMod.MultiWorld
         private Thread ReadThread;
 
         // TODO use these to make this class nicer
-        public delegate void ReadyConfirmEvent(int num, string players);
         public delegate void DisconnectEvent();
         public delegate void ConnectEvent(ulong uid);
         public delegate void JoinEvent();
         public delegate void LeaveEvent();
 
-        public event ReadyConfirmEvent ReadyConfirmReceived;
+        public Action<int, string> ReadyConfirmReceived;
         public event DisconnectEvent OnDisconnect;
         public event ConnectEvent OnConnect;
         public event JoinEvent OnJoin;
