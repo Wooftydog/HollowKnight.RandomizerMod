@@ -861,7 +861,7 @@ namespace RandomizerMod
                         /*RandomizerMod.Instance.mwConnection.Disconnect();
                         RandomizerMod.Instance.mwConnection = new MultiWorld.ClientConnection();*/
                         RandomizerMod.Instance.mwConnection.Connect();
-                        RandomizerMod.Instance.mwConnection.ReadyConfirmReceived += UpdateReady;
+                        RandomizerMod.Instance.mwConnection.ReadyConfirmReceived = UpdateReady;
                         item.SetSelection("Yes");
                     }
                     catch
