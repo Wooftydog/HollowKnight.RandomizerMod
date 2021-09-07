@@ -4483,9 +4483,9 @@
     <sceneName>Crossroads_10</sceneName>
     <objectName>Ghost False Knight NPC</objectName>
     <fsmName>Conversation Control</fsmName>
-    <itemLogic>Crossroads + ((ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) | (WINGS + INFECTED)) + DREAMNAIL + BOSS + FULLDASH</itemLogic>
-    <areaLogic>Crossroads + ((ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) | (WINGS + INFECTED)) + DREAMNAIL + BOSS + FULLDASH</areaLogic>
-    <roomLogic>Crossroads_10 + (ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) + DREAMNAIL + BOSS + FULLDASH</roomLogic>
+    <itemLogic>Crossroads + ((ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) | (WINGS + INFECTED)) + DREAMNAIL + BOSS + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</itemLogic>
+    <areaLogic>Crossroads + ((ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) | (WINGS + INFECTED)) + DREAMNAIL + BOSS + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</areaLogic>
+    <roomLogic>Crossroads_10 + (ANYCLAW + (WINGS | LEFTDASH | LEFTSUPERDASH)) + DREAMNAIL + BOSS + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</roomLogic>
     <type>Trinket</type>
     <action>Essence</action>
     <pool>Essence_Boss</pool>
@@ -4500,9 +4500,9 @@
     <sceneName>Ruins1_24_boss_defeated</sceneName>
     <objectName>Ghost Mage Lord NPC</objectName>
     <fsmName>Conversation Control</fsmName>
-    <itemLogic>Soul_Sanctum + (LEFTCLAW | WINGS | (RIGHTCLAW + LEFTDASH + LEFTSUPERDASH + MILDSKIPS)) + DREAMNAIL + BOSS + FULLDASH</itemLogic>
-    <areaLogic>Soul_Sanctum + (LEFTCLAW | WINGS | (RIGHTCLAW + LEFTDASH + LEFTSUPERDASH + MILDSKIPS)) + DREAMNAIL + BOSS + FULLDASH</areaLogic>
-    <roomLogic>Ruins1_24[right1] + (LEFTCLAW | WINGS | LEFTDASH) + DREAMNAIL + BOSS + FULLDASH</roomLogic>
+    <itemLogic>Soul_Sanctum + (LEFTCLAW | WINGS | (RIGHTCLAW + LEFTDASH + LEFTSUPERDASH + MILDSKIPS)) + DREAMNAIL + BOSS</itemLogic>
+    <areaLogic>Soul_Sanctum + (LEFTCLAW | WINGS | (RIGHTCLAW + LEFTDASH + LEFTSUPERDASH + MILDSKIPS)) + DREAMNAIL + BOSS</areaLogic>
+    <roomLogic>Ruins1_24[right1] + (LEFTCLAW | WINGS | LEFTDASH) + DREAMNAIL + BOSS</roomLogic>
     <type>Trinket</type>
     <action>Essence</action>
     <pool>Essence_Boss</pool>
@@ -4517,9 +4517,9 @@
     <sceneName>Abyss_19</sceneName>
     <objectName>Ghost Infected Knight NPC</objectName>
     <fsmName>Conversation Control</fsmName>
-    <itemLogic>Far_Left_Basin + (LEFTCLAW | (WINGS + MILDSKIPS)) + DREAMNAIL + BOSS + FULLDASH</itemLogic>
-    <areaLogic>Far_Left_Basin + (LEFTCLAW | (WINGS + MILDSKIPS)) + DREAMNAIL + BOSS + FULLDASH</areaLogic>
-    <roomLogic>Abyss_19[bot1] + (LEFTCLAW | WINGS) + DREAMNAIL + BOSS + FULLDASH</roomLogic>
+    <itemLogic>Far_Left_Basin + (LEFTCLAW | (WINGS + MILDSKIPS)) + DREAMNAIL + BOSS</itemLogic>
+    <areaLogic>Far_Left_Basin + (LEFTCLAW | (WINGS + MILDSKIPS)) + DREAMNAIL + BOSS</areaLogic>
+    <roomLogic>Abyss_19[bot1] + (LEFTCLAW | WINGS) + DREAMNAIL + BOSS</roomLogic>
     <type>Trinket</type>
     <action>Essence</action>
     <pool>Essence_Boss</pool>
@@ -4534,9 +4534,9 @@
     <sceneName>Waterways_15</sceneName>
     <objectName>Dung Defender_Sleep</objectName>
     <fsmName>Award Orbs</fsmName>
-    <itemLogic>Central_Left_Waterways + (RIGHTCLAW | (WINGS + LEFTCLAW) | ((WINGS | LEFTCLAW) + SPICYSKIPS)) + QUAKE + DREAMNAIL + BOSS + Lurien + Monomon + Herrah + FULLDASH</itemLogic>
-    <areaLogic>Central_Left_Waterways + (RIGHTCLAW | (WINGS + LEFTCLAW) | ((WINGS | LEFTCLAW) + SPICYSKIPS)) + QUAKE + DREAMNAIL + BOSS + Lurien + Monomon + Herrah + FULLDASH</areaLogic>
-    <roomLogic>Waterways_15[top1] + DREAMNAIL + BOSS + Lurien + Monomon + Herrah + FULLDASH</roomLogic>
+    <itemLogic>Central_Left_Waterways + (RIGHTCLAW | (WINGS + LEFTCLAW) | ((WINGS | LEFTCLAW) + SPICYSKIPS)) + QUAKE + DREAMNAIL + BOSS + Lurien + Monomon + Herrah</itemLogic>
+    <areaLogic>Central_Left_Waterways + (RIGHTCLAW | (WINGS + LEFTCLAW) | ((WINGS | LEFTCLAW) + SPICYSKIPS)) + QUAKE + DREAMNAIL + BOSS + Lurien + Monomon + Herrah</areaLogic>
+    <roomLogic>Waterways_15[top1] + DREAMNAIL + BOSS + Lurien + Monomon + Herrah</roomLogic>
     <type>Trinket</type>
     <action>Essence</action>
     <pool>Essence_Boss</pool>
@@ -4553,9 +4553,9 @@
     <sceneName>Room_Bretta_Basement</sceneName>
     <objectName>Dream Enter</objectName>
     <fsmName>Award Orbs</fsmName>
-    <itemLogic>Dirtmouth + DREAMNAIL + BOSS + Mantis_Outskirts + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Failed_Tramway + Colosseum + (SPICYCOMBATSKIPS | FOCUS) + FULLDASH</itemLogic>
-    <areaLogic>Dirtmouth + DREAMNAIL + BOSS + Mantis_Outskirts + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Colosseum + (SPICYCOMBATSKIPS | FOCUS) + FULLDASH</areaLogic>
-    <roomLogic>Room_Bretta[right1] + DREAMNAIL + BOSS + Fungus2_23 + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Room_Colosseum_01[left1] + (SPICYCOMBATSKIPS | FOCUS) + FULLDASH</roomLogic>
+    <itemLogic>Dirtmouth + DREAMNAIL + BOSS + Mantis_Outskirts + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Failed_Tramway + Colosseum + (SPICYCOMBATSKIPS | FOCUS) + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</itemLogic>
+    <areaLogic>Dirtmouth + DREAMNAIL + BOSS + Mantis_Outskirts + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Colosseum + (SPICYCOMBATSKIPS | FOCUS) + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</areaLogic>
+    <roomLogic>Room_Bretta[right1] + DREAMNAIL + BOSS + Fungus2_23 + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Room_Colosseum_01[left1] + (SPICYCOMBATSKIPS | FOCUS) + (FULLDASH | (ANYDASH + MILDCOMBATSKIPS) | SPICYCOMBATSKIPS)</roomLogic>
     <type>Trinket</type>
     <action>Essence</action>
     <pool>Essence_Boss</pool>
