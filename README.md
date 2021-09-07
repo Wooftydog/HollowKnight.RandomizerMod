@@ -1,3 +1,3 @@
-These are changes I'm currently testing that are NOT in an offcial version:
+These are changes I'm currently testing that are NOT in an official version:
 
-Dream Boss Logic (Failed Champion, Soul Tyrant, Lost Kin, White Defender, Grey Prince Zote)
+Unlike other bosses, Failed Champion & Grey Prince Zote require Left & Right Cloak for Easy, Half Cloak for Mild Skips, & No Cloak for Spicy Skips
